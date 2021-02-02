@@ -1,0 +1,197 @@
+.row {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  margin: 0 -15px 0 -15px;
+  position: relative !important;
+
+  .col {
+    position: relative !important;
+
+    .img-container {
+      width: 130px;
+
+      img {
+        position: absolute;
+        top: 25px;
+        left: 80px;
+      }
+    }
+
+    .register-form {
+      position: relative !important;
+
+      h2 {
+        color: #163a49;
+        font-size: 26px !important;
+        font-weight: 700 !important;
+        line-height: 1.2;
+        margin: 96px 0 0 -70px !important;
+      }
+
+      p {
+        color: #969696;
+        font-size: 16px;
+        line-height: 1.2;
+        margin: 21px 0 0 -70px;
+      }
+
+      .text-danger {
+        color: red;
+        border: 1px solid red;
+        &::placeholder {
+          color: red;
+          opacity: 1; /* Firefox */
+        }
+        
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+         color: red;
+        }
+        
+        &::-ms-input-placeholder { /* Microsoft Edge */
+         color: red;
+        }
+      }
+
+      .brand-fs {
+        margin: 21px 0 0 60px;
+
+        legend {
+          color: #363636;
+          display: flex;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 1.5;
+        }
+
+        input.no-errors {
+          margin-bottom: 15px;
+        }
+        
+        input {
+          font-size: 16px;
+          height: calc(1.5em + 0.75rem + 16px) !important;
+          margin-bottom: -5px;
+          width: 100%;
+        }
+      }
+
+      .email-fs {
+        margin: 5px 0 0 60px !important;
+
+        legend {
+          color: #363636;
+          display: flex;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 1.5;
+        }
+
+        input.no-errors {
+          margin-bottom: 15px;
+        }
+
+        input {
+          font-size: 16px;
+          height: calc(1.5em + 0.75rem + 16px) !important;
+          margin-bottom: -5px;
+          width: 100%;
+        }
+      }
+
+      .password-fs {
+        margin: 5px 0 0 60px !important;
+
+        legend {
+          color: #363636;
+          display: flex;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 1.5;
+        }
+
+        input.no-errors {
+          margin-bottom: 15px;
+        }
+
+        input {
+          font-size: 16px;
+          height: calc(1.5em + 0.75rem + 16px) !important;
+          margin-bottom: -5px;
+          width: 100%;
+        }
+      }
+
+      .create-account-btn {
+        height: 45px !important;
+        margin-bottom: 35px;
+
+        .col {
+          button {
+            background-color: #1bb8e3;
+            border: none;
+            font-size: 13px;
+            font-weight: 700 !important;
+            height: 45px !important;
+            margin-left: 60px;
+            text-transform: none !important;
+            width: 93%;
+          }
+        }
+      }
+
+      .terms-and-conditions {
+        color: #969696;
+        display: block;
+        font-size: 13px;
+        margin-left: 57px;
+        position: relative !important;
+
+        a {
+          background-color: transparent;
+          color: #363636;
+          font-weight: 400;
+          line-height: 1.5;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1245px) {
+  .brand-fs {
+    width: 30rem !important;
+    legend {
+      margin-left: -210px !important;
+    }
+  }
+  .email-fs {
+    width: 30rem !important;
+    legend {
+      margin-left: -223px !important;
+    }
+  }
+  .password-fs {
+    width: 30rem !important;
+    legend {
+      margin-left: -207px !important;
+    }
+  }
+  .create-account-btn {
+    width: 30rem !important;
+  }
+
+  .terms-and-conditions {
+    width: 30rem !important;
+  }
+}
+
+@media (max-width: 530px) {
+  .row {
+    display: none;
+  }
+}

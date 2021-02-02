@@ -1,0 +1,165 @@
+.row {
+  margin: 0 -15px 0 -15px !important;
+  position: relative !important;
+  
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  .col {
+    position: relative !important;
+
+    .img-container {
+      width: 130px;
+
+      img {
+        position: absolute;
+        top: 25px;
+        left: 80px;
+      }
+    }
+
+    .login-form {
+      position: relative !important;
+
+      h2 {
+        position: relative;
+        display: flex;
+        margin-top: 115px;
+        margin-left: 60px;
+        color: #163a49;
+        font-size: 26px !important;
+        font-weight: 700 !important;
+        line-height: 1.2;
+      }
+
+      .text-danger {
+        color: red;
+        border: 1px solid red;
+        &::placeholder {
+          color: red;
+          opacity: 1; /* Firefox */
+        }
+        
+        &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+         color: red;
+        }
+        
+        &::-ms-input-placeholder { /* Microsoft Edge */
+         color: red;
+        }
+      }
+      
+      .email-fs {
+        margin-top: 15px;
+        margin-left: 60px;
+        legend {
+          color: #363636;
+          display: flex;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 1.5;
+        }
+
+        input.no-errors {
+          margin-bottom: 15px;
+        }
+
+        input {
+          font-size: 16px;
+          height: calc(1.5em + 0.75rem + 16px) !important;
+          width: 100%;
+        }
+      }
+
+      .password-fs {
+        margin: 15px 0 0 60px;
+
+        legend {
+          color: #363636;
+          display: flex;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 1.5;
+        }
+
+        input.no-errors {
+          margin-bottom: 15px;
+        }
+        
+        input {
+          font-size: 16px;
+          height: calc(1.5em + 0.75rem + 16px) !important;
+          width: 100%;
+        }
+      }
+
+      .login-account-btn {
+        display: flex;
+        height: 45px !important;
+        margin-bottom: 35px;
+        position: relative !important;
+
+        .col {
+          width: 93% !important;
+          
+          button {
+            background-color: #1bb8e3;
+            border: none;
+            font-size: 13px;
+            font-weight: 700 !important;
+            height: 45px !important;
+            margin-left: 60px;
+            text-transform: none !important;
+            width: inherit;
+          }
+        }
+      }
+
+      .forgot-password {
+        color: #969696;
+        display: flex;
+        font-size: 13px;
+        margin-left: 60px;
+        position: relative !important;
+        
+        a {
+          background-color: transparent;
+          color: #969696;
+          font-size: 14px !important;
+          text-decoration: underline !important;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1245px) {
+  .email-fs {
+    width: 30rem !important;
+    legend {
+      margin-left: -223px !important;
+    }
+  }
+  .password-fs {
+    width: 30rem !important;
+    legend {
+      margin-left: -207px !important;
+    }
+  }
+  .login-account-btn {
+    width: 34rem !important;
+  }
+
+  .forgot-password {
+    width: 30rem !important;
+  }
+}
+
+@media (max-width: 530px) {
+  .row {
+    display: none;
+  }
+}

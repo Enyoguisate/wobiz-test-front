@@ -1,0 +1,24 @@
+.inline-alert {
+  max-height: 40px !important;
+  .alert {
+    color: #fff;
+    display: flex;
+    position: relative;
+    flex-direction: initial;
+    height: 40px !important;
+    background-color: #e85837;
+    border: none;
+    padding: 10px;
+    .col {
+      flex: none;
+      margin-left: 15px;
+      p {
+        color: #fff;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.5;
+        text-align: left;
+      }
+    }
+  }
+}
